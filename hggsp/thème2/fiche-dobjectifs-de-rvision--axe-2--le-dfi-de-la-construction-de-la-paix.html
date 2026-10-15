@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICHE D'OBJECTIFS DE RÉVISION — AXE 2 : LE DÉFI DE LA CONSTRUCTION DE LA PAIX</title>
+    <script data-goatcounter="https://mbarth.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 12mm;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.25;
+            color: #1a1a2e;
+            background: #f0ebe3;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            background: #f0ebe3;
+            padding: 10px 12px;
+        }
+
+        /* ===== EN-TÊTE ===== */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .header-icon {
+            width: 34px;
+            height: 34px;
+            background: #1a1a2e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .header-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .header-title {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-title h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15pt;
+            font-weight: 800;
+            color: #1a1a2e;
+            letter-spacing: -0.3px;
+            line-height: 1.05;
+        }
+
+        /* ===== GRILLE HAUT ===== */
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* ===== BLOCS ===== */
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .card-label {
+            padding: 6px 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #ffffff;
+        }
+
+        .card-label.green {
+            background: linear-gradient(135deg, #5b9a8b 0%, #7bc4b5 100%);
+        }
+
+        .card-label.orange {
+            background: linear-gradient(135deg, #c97b5a 0%, #e09a7a 100%);
+        }
+
+        .card-label.yellow {
+            background: linear-gradient(135deg, #d4a843 0%, #e8c76a 100%);
+            color: #3d3420;
+        }
+
+        .card-body {
+            padding: 8px 12px;
+        }
+
+        /* ===== CHECKBOX ITEMS ===== */
+        .item {
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+            padding: 3px 0;
+            font-size: 8.6pt;
+            color: #2d2d3a;
+        }
+
+        .item + .item {
+            border-top: 1px solid #f0ece6;
+        }
+
+        .cb {
+            width: 13px;
+            height: 13px;
+            border: 2px solid #c0bdb5;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 1px;
+            background: #ffffff;
+        }
+
+        /* ===== SOUS-CATÉGORIES ===== */
+        .sub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .sub-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 8.8pt;
+            color: #1a1a2e;
+            text-decoration: underline;
+            text-decoration-color: #c97b5a;
+            text-underline-offset: 3px;
+            margin-bottom: 4px;
+        }
+
+        .sub-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 0;
+            font-size: 8.6pt;
+            color: #2d2d3a;
+        }
+
+        .sub-item .cb {
+            width: 12px;
+            height: 12px;
+        }
+
+        /* ===== BAS ===== */
+        .bottom-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .bottom-items {
+            padding: 8px 12px;
+        }
+        
+        @media print {
+            body { background: white; }
+            .page { padding: 0; min-height: 0; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- EN-TÊTE -->
+        <div class="header">
+            <div class="header-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="1"/>
+                    <path d="M9 14l2 2 4-4"/>
+                </svg>
+            </div>
+            <div class="header-title">
+                <h1>FICHE D'OBJECTIFS DE RÉVISION — AXE 2 : LE DÉFI DE LA CONSTRUCTION DE LA PAIX</h1>
+            </div>
+        </div>
+
+        <!-- HAUT : 2 COLONNES -->
+        <div class="top-grid">
+
+            <!-- REPÈRES -->
+            <div class="card">
+                <div class="card-label green">Repères</div>
+                <div class="card-body">
+                    
+    <div class="item">
+      <div class="cb"></div>
+      <span>1618-1648 : guerre de Trente Ans (Habsbourg d'Autriche et d'Espagne contre Danemark, Suède, France + déchirements entre États allemands de l'Empire)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Septembre 1814-1815 : congrès de Vienne (près de 200 délégations, Talleyrand pour la France)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Juin 1919-août 1920 : Versailles (Allemagne), Saint-Germain-en-Laye (Autriche), Sèvres puis Lausanne (Empire ottoman)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Janvier 1918 : 14 points de Wilson — 1919 : création de la SDN (Genève)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>26 juin 1945 : Charte des Nations unies à San Francisco (50 membres, 193 aujourd'hui)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1950 : Corée (intervention autorisée en l'absence de l'URSS) — 1953 : armistice de Panmunjeom (conflit toujours officiellement en cours)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1956 : crise de Suez (ONU contre France, Grande-Bretagne, Israël) — 1990-1991 : Koweït contre l'Irak de Saddam Hussein</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1995 : accords de Dayton (Bosnie, sous supervision américaine)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1994 : génocide du Rwanda — juillet 1995 : massacre de Srebrenica (ONU sur place sans empêcher)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1997-2006 : mandats de Kofi Annan — 1998 : création de la Cour pénale internationale — 2000 : Objectifs du Millénaire pour le développement</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>1999 : intervention de l'OTAN en Serbie/Kosovo sans aval du Conseil — 2003 : invasion de l'Irak sans aval — 2011 : Libye autorisée sans veto russe ni chinois</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>2002 : indépendance du Timor oriental (20 mai 2002, administration UNTAET) — 2005 : responsabilité de protéger — 2008 : 4 conditions de la paix durable</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>2005 : IRA dépose les armes unilatéralement (sans traité) — 2018 : paix Éthiopie-Érythrée (médiation Salman) — 2022 : invasion russe de l'Ukraine (veto russe)</span>
+    </div>
+                </div>
+            </div>
+
+            <!-- VOCABULAIRE -->
+            <div class="card">
+                <div class="card-label orange">Notions & Vocabulaire</div>
+                <div class="card-body">
+                    <div class="sub-grid">
+                        
+        <div>
+          <div class="sub-title">Paix et traités</div>
+          
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>armistice (simple arrêt des combats)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>traité de paix (acte qui proclame la fin, fixe frontières et organise les relations)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>construction de la paix en 3 étapes (armistice, traité, mise en œuvre — la 3e est la plus longue)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>congrès international (négociation collective inaugurée à Münster/Osnabrück)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>souveraineté (capacité d'un État à être autonome et reconnu, monopole de la guerre et de la paix)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>équilibre des puissances (empêcher l'hégémonie, paix armée avec armées permanentes)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>non-ingérence (ne pas s'immiscer dans les affaires internes d'un autre État)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>concert des nations (diplomatie multilatérale des grandes puissances après Vienne)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>diktat (traité perçu comme imposé, ex. Versailles) et victoire mutilée (Italie, 1919)</span>
+    </div>
+        </div>
+        <div>
+          <div class="sub-title">Sécurité collective</div>
+          
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>sécurité collective (maintenir la paix à tout prix, responsabilité de tous, solidarité avant souveraineté)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>SDN (1919, arbitrage pacifique, pas d'armée, sanctions économiques, unanimité, sans USA ni vaincus ni colonisés)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>ONU : Assemblée générale (1 État = 1 voix), Conseil de sécurité (15 membres dont 5 permanents à veto), ECOSOC, CIJ, Secrétariat</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>droit de veto (un permanent bloque seul une résolution)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>casques bleus (troupes prêtées par les États, déployées avec consentement, pas d'armée propre à l'ONU)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>prévenir / maintenir / rétablir-imposer la paix (3 missions ONU, y compris protéger les civils)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>responsabilité de protéger — R2P (2005, 3 piliers : État, aide internationale, intervention si défaillance)</span>
+    </div>
+        </div>
+        <div>
+          <div class="sub-title">Paix durable</div>
+          
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>paix négative (simple cessation des combats) / paix positive (conditions du développement éco-social, Galtung)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>paix durable ONU 2008 (sécurité-ordre public, droits de l'homme, participation-institutions, développement éco-social)</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>pacifisme, référendum (ex. Haute-Silésie 1922), UNICEF/OMS/ONG, OMD 2000</span>
+    </div>
+    <div class="sub-item">
+      <div class="cb"></div>
+      <span>doux commerce (Montesquieu), fédéralisme (La Haye 1948, construction européenne), désarmement, hégémonie type Pax Romana/Britannica</span>
+    </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BAS : GRANDES LIGNES -->
+        <div class="bottom-card">
+            <div class="card-label yellow">Grandes lignes du cours à savoir expliquer</div>
+            <div class="bottom-items">
+                
+    <div class="item">
+      <div class="cb"></div>
+      <span>Distinguer armistice (arrêt des combats) et traité (fin juridique + frontières + relations) et expliquer la construction en 3 étapes dont la mise en œuvre est la plus difficile (gens de guerre, 42 traités de la guerre de Cent Ans, paix temporaires ou défavorables aux vaincus)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Expliquer l'ordre westphalien (1648) : souveraineté et pardon mutuel, État acteur unique, souveraineté intérieure/extérieure, égalité-indépendance, frontières en ligne nette, équilibre contre l'hégémonie, paix collective par congrès et diplomatie professionnalisée</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Montrer que Vienne (1814-1815, Talleyrand, concert des nations, Sainte-Alliance) restaure l'équilibre mais au mépris des nationalités (Autriche, Prusse, Russie s'agrandissent) et prépare une paix relative jusqu'en 1914</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Expliquer pourquoi Versailles (sans les vaincus, réparations, exclusion SDN, Conseil des 4 aux intérêts divergents) est perçu comme un diktat et porte des germes de guerre (minorités, Haute-Silésie, couloir de Dantzig, victoire mutilée italienne)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Présenter la SDN (Wilson 14 points, multilatéral, arbitrage, égalité) puis ses limites : club des vainqueurs, unanimité, sans Allemagne/Russie/USA/colonisés, sans armée, échec face à la Rhénanie 1936 et aux totalitarismes</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Présenter l'ONU (San Francisco 26 juin 1945, 50 puis 193 membres, AG + Conseil 5 vetos + 10 élus, résolutions contraignantes, casques bleus prêtés) et ses 3 missions + exemples (Corée 1950, Suez 1956, Koweït 1991, Bosnie 1995, Libye 2011) et échecs (Indochine/Algérie/Vietnam, Rwanda, Srebrenica, Ukraine 2022)</span>
+    </div>
+    <div class="item">
+      <div class="cb"></div>
+      <span>Expliquer la paix durable : pas toujours de traité (Allemagne 1945, IRA 2005, Corée 1953), théories (hégémonie, Végèce, doux commerce, fédéralisme, désarmement, sécurité collective), paix de vainqueurs avec gendarmes, accompagnement (dénazification, Galtung, UNICEF, Timor 2002, 4 conditions 2008) et difficultés (application, respect, acteurs multiples, terroristes sans interlocuteurs type Syrie, Cachemire/Liban/RDC, OTAN 1999 et Irak 2003 sans aval, veto et troupes prêtées)</span>
+    </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
